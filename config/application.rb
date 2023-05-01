@@ -20,6 +20,8 @@ require 'action_cable/engine'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load if %w[development test].include? ENV['RAILS_ENV']
+
 module ApiOauthAuthentication
   # This is the class for application.rb in the application.
   class Application < Rails::Application
