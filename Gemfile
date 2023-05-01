@@ -21,6 +21,9 @@ gem 'jsonapi-serializer', '~> 2.2'
 # gem "jbuilder"
 gem 'jsom-pagination', '~> 0.2.0'
 
+# Handling errors
+gem 'jsonapi_errors_handler', '~> 0.6.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
